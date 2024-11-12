@@ -1,0 +1,326 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Dating App for Dealls",
+        "title": "Dating App",
+        "contact": {
+            "name": "@usagifm",
+            "url": "https://example.id"
+        },
+        "version": "1.0"
+    },
+    "host": "dating-app.taktix.co.id",
+    "basePath": "/",
+    "paths": {
+        "/api/v1/auth/login": {
+            "post": {
+                "description": "Log in an existing user and get a token.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "User login",
+                "parameters": [
+                    {
+                        "description": "Login Request Body",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/contract.LoginRequest"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/api/v1/auth/profile": {
+            "get": {
+                "description": "Retrieve the profile of the currently authenticated user.",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get user profile",
+                "responses": {}
+            }
+        },
+        "/api/v1/auth/signup": {
+            "post": {
+                "description": "Sign up a new user with the provided details.",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Authentication"
+                ],
+                "summary": "Register a new user",
+                "parameters": [
+                    {
+                        "description": "Sign Up Request Body",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/contract.SignUpRequest"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/api/v1/dating": {
+            "get": {
+                "description": "Retrieve a list of profiles based on user preference",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get profiles by user preference",
+                "responses": {}
+            }
+        },
+        "/api/v1/dating/matches": {
+            "get": {
+                "description": "Retrieve a list of matched users",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get matched users",
+                "responses": {}
+            }
+        },
+        "/api/v1/dating/package/buy": {
+            "post": {
+                "description": "Purchase a package",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Package"
+                ],
+                "summary": "Buy a package",
+                "parameters": [
+                    {
+                        "description": "Buy package request body",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/contract.BuyPackageRequest"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/api/v1/dating/package/list": {
+            "get": {
+                "description": "Retrieve the list of packages available for purchase",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Package"
+                ],
+                "summary": "Get available packages",
+                "responses": {}
+            }
+        },
+        "/api/v1/dating/preference": {
+            "get": {
+                "description": "Retrieve the user's preference settings",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User"
+                ],
+                "summary": "Get user preference",
+                "responses": {}
+            },
+            "put": {
+                "description": "Update the user's preference settings",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User"
+                ],
+                "summary": "Update user preference",
+                "parameters": [
+                    {
+                        "description": "Update user preference request body",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/contract.UpdateUserPreferenceRequest"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        },
+        "/api/v1/dating/swipe": {
+            "post": {
+                "description": "Swipe a user and check if it's a match",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "User"
+                ],
+                "summary": "Swipe user",
+                "parameters": [
+                    {
+                        "description": "Swipe request body",
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/contract.SwipeRequest"
+                        }
+                    }
+                ],
+                "responses": {}
+            }
+        }
+    },
+    "definitions": {
+        "contract.BuyPackageRequest": {
+            "type": "object",
+            "required": [
+                "package_id"
+            ],
+            "properties": {
+                "package_id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "contract.LoginRequest": {
+            "type": "object",
+            "required": [
+                "email",
+                "password"
+            ],
+            "properties": {
+                "email": {
+                    "type": "string"
+                },
+                "password": {
+                    "type": "string"
+                }
+            }
+        },
+        "contract.SignUpRequest": {
+            "type": "object",
+            "required": [
+                "age",
+                "bio",
+                "email",
+                "gender",
+                "name",
+                "password",
+                "photo_url",
+                "preferred_gender"
+            ],
+            "properties": {
+                "age": {
+                    "type": "integer"
+                },
+                "bio": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "max_age": {
+                    "type": "integer"
+                },
+                "min_age": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string",
+                    "minLength": 6
+                },
+                "password": {
+                    "type": "string",
+                    "minLength": 6
+                },
+                "photo_url": {
+                    "type": "string"
+                },
+                "preferred_gender": {
+                    "type": "string"
+                }
+            }
+        },
+        "contract.SwipeRequest": {
+            "type": "object",
+            "properties": {
+                "swipe_type": {
+                    "type": "string"
+                },
+                "swiped_id": {
+                    "type": "integer"
+                }
+            }
+        },
+        "contract.UpdateUserPreferenceRequest": {
+            "type": "object",
+            "properties": {
+                "max_age": {
+                    "type": "integer"
+                },
+                "min_age": {
+                    "type": "integer"
+                },
+                "preferred_gender": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,176 @@
+{
+  "err_bad_request_title": {
+    "other": "Permintaan Salah"
+  },
+  "err_bad_request_message": {
+    "other": "Parameter Permintaan Salah"
+  },
+  "err_internal_server_title": {
+    "other": "Terjadi kesalahan"
+  },
+  "err_internal_server_message": {
+    "other": "Kami sedang mengalami masalah. Silakan coba lagi nanti"
+  },
+  "err_email_registered_title": {
+    "other": "Akun ini sudah terdaftar"
+  },
+  "err_email_registered_message": {
+    "other": "Silakan masuk untuk melanjutkan"
+  },
+  "err_email_unverified_title": {
+    "other": "Akun ini belum diverifikasi"
+  },
+  "err_email_unverified_message": {
+    "other": "Silakan lakukan verifikasi melalui halaman daftar"
+  },
+  "err_email_registered_by_external_provider_title": {
+    "other": "Akunmu belum memiliki kata sandi"
+  },
+  "err_email_registered_by_external_provider_message": {
+    "other": "Buat kata sandi dengan mengklik tombol 'Lupa Kata Sandi' di bawah"
+  },
+  "err_phone_registered_title": {
+    "other": "Akun ini sudah terdaftar"
+  },
+  "err_phone_registered_message": {
+    "other": "Silakan masuk untuk melanjutkan"
+  },
+  "err_phone_unverified_title": {
+    "other": "Akun ini belum diverifikasi"
+  },
+  "err_phone_unverified_message": {
+    "other": "Silakan lakukan verifikasi melalui halaman daftar"
+  },
+  "err_email_or_password_title": {
+    "other": "Email atau kata sandi salah"
+  },
+  "err_email_or_password_message": {
+    "other": "Pastikan kamu memasukkan email atau kata sandi dengan benar"
+  },
+  "err_phone_or_password_title": {
+    "other": "Nomor handphone atau kata sandi salah"
+  },
+  "err_phone_or_password_message": {
+    "other": "Pastikan kamu memasukkan nomor handphone atau kata sandi dengan benar"
+  },
+  "err_delete_account_invalid_password_title": {
+    "other": "Gagal Hapus Akun"
+  },
+  "err_delete_account_invalid_password_message": {
+    "other": "Password tidak valid"
+  },
+  "err_password_not_set_title": {
+    "other": "Validasi Password Gagal"
+  },
+  "err_password_not_set_message": {
+    "other": "Password belum diatur"
+  },
+  "err_quota_exceeded_title": {
+    "other": "Melampaui batas permintaan OTP"
+  },
+  "err_quota_exceeded_message": {
+    "other": "Kamu telah meminta terlalu banyak OTP. Silakan coba lagi besok atau setelah pukul 00.00"
+  },
+  "err_otp_waiting_time_title": {
+    "other": "Tidak Dapat Meminta OTP Baru"
+  },
+  "err_otp_waiting_time_message": {
+    "other": "Harap tunggu sebelum meminta OTP baru"
+  },
+  "err_verify_identity_invalid_email_or_password_title": {
+    "other": "Verifikasi Identitas Gagal"
+  },
+  "err_verify_identity_invalid_email_or_password_message": {
+    "other": "Email atau password tidak valid"
+  },
+  "err_verify_identity_password_not_set_title": {
+    "other": "Verifikasi Identitas Gagal"
+  },
+  "err_verify_identity_password_not_set_message": {
+    "other": "Password belum diatur"
+  },
+  "err_change_password_invalid_password_title": {
+    "other": "Ubah Password Gagal"
+  },
+  "err_change_password_invalid_password_message": {
+    "other": "Password tidak valid"
+  },
+  "err_change_password_password_not_set_title": {
+    "other": "Ubah Password Gagal"
+  },
+  "err_change_password_password_not_set_message": {
+    "other": "Password belum diatur"
+  },
+  "err_identity_not_valid_title": {
+    "other": "Identitas tidak valid"
+  },
+  "err_identity_not_valid_message": {
+    "other": "Identitas tidak valid"
+  },
+  "err_id_not_found_title": {
+    "other": "Id tidak ditemukan"
+  },
+  "err_id_not_found_message": {
+    "other": "Id user tidak ditemukan"
+  },
+  "err_delete_link_not_available_title": {
+    "other": "Link Hapus Akun Tidak Tersedia"
+  },
+  "err_delete_link_not_available_message": {
+    "other": "Link hapus akun tidak tersedia untuk fitur atau channel ini"
+  },
+  "err_expired_link_title": {
+    "other": "Link Kedaluwarsa"
+  },
+  "err_expired_link_message": {
+    "other": "Link telah kedaluwarsa"
+  },
+  "err_link_identity_not_valid_title": {
+    "other": "OTP Identity Tidak Valid"
+  },
+  "err_link_identity_not_valid_message": {
+    "other": "OTP identity yang diberikan tidak valid"
+  },
+  "err_link_not_available_title": {
+    "other": "Link Tidak Tersedia"
+  },
+  "err_link_not_available_message": {
+    "other": "Fitur link tidak tersedia untuk permintaan otp ini"
+  },
+  "err_user_account_not_found_title": {
+    "other": "Email tidak ditemukan"
+  },
+  "err_user_account_not_found_message": {
+    "other": "Email yang diberikan tidak dapat ditemukan."
+  },
+  "err_user_not_found_title": {
+    "other": "User Tidak Ditemukan"
+  },
+  "err_user_not_found_message": {
+    "other": "User tidak digunakan berdasarkan informasi yang diberikan"
+  },
+  "err_wrong_password_title": {
+    "other": "Password salah"
+  },
+  "err_wrong_password_message": {
+    "other": "Password yang dimasukan salah"
+  },
+  "err_email_unregistered_title": {
+    "other": "Akun ini belum terdaftar"
+  },
+  "err_email_unregistered_message": {
+    "other": "Daftar untuk menikmati konten Vision+"
+  },
+  "err_email_fb_not_found_title": {
+    "other": "Izin diperlukan."
+  },
+  "err_email_fb_not_found_message": {
+    "other": "Tidak dapat mendaftar tanpa alamat email, mohon memberikan izin email."
+  },
+  "err_phone_unregistered_title": {
+    "other": "Akun ini belum terdaftar"
+  },
+  "err_phone_unregistered_message": {
+    "other": "Daftar untuk menikmati konten Vision+"
+  }
+}

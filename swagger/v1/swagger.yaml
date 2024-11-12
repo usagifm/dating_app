@@ -1,0 +1,221 @@
+basePath: /
+definitions:
+  contract.BuyPackageRequest:
+    properties:
+      package_id:
+        type: integer
+    required:
+    - package_id
+    type: object
+  contract.LoginRequest:
+    properties:
+      email:
+        type: string
+      password:
+        type: string
+    required:
+    - email
+    - password
+    type: object
+  contract.SignUpRequest:
+    properties:
+      age:
+        type: integer
+      bio:
+        type: string
+      email:
+        type: string
+      gender:
+        type: string
+      max_age:
+        type: integer
+      min_age:
+        type: integer
+      name:
+        minLength: 6
+        type: string
+      password:
+        minLength: 6
+        type: string
+      photo_url:
+        type: string
+      preferred_gender:
+        type: string
+    required:
+    - age
+    - bio
+    - email
+    - gender
+    - name
+    - password
+    - photo_url
+    - preferred_gender
+    type: object
+  contract.SwipeRequest:
+    properties:
+      swipe_type:
+        type: string
+      swiped_id:
+        type: integer
+    type: object
+  contract.UpdateUserPreferenceRequest:
+    properties:
+      max_age:
+        type: integer
+      min_age:
+        type: integer
+      preferred_gender:
+        type: string
+    type: object
+host: dating-app.taktix.co.id
+info:
+  contact:
+    name: '@usagifm'
+    url: https://example.id
+  description: Dating App for Dealls
+  title: Dating App
+  version: "1.0"
+paths:
+  /api/v1/auth/login:
+    post:
+      consumes:
+      - application/json
+      description: Log in an existing user and get a token.
+      parameters:
+      - description: Login Request Body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/contract.LoginRequest'
+      produces:
+      - application/json
+      responses: {}
+      summary: User login
+      tags:
+      - Authentication
+  /api/v1/auth/profile:
+    get:
+      description: Retrieve the profile of the currently authenticated user.
+      produces:
+      - application/json
+      responses: {}
+      summary: Get user profile
+      tags:
+      - User
+  /api/v1/auth/signup:
+    post:
+      consumes:
+      - application/json
+      description: Sign up a new user with the provided details.
+      parameters:
+      - description: Sign Up Request Body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/contract.SignUpRequest'
+      produces:
+      - application/json
+      responses: {}
+      summary: Register a new user
+      tags:
+      - Authentication
+  /api/v1/dating:
+    get:
+      consumes:
+      - application/json
+      description: Retrieve a list of profiles based on user preference
+      produces:
+      - application/json
+      responses: {}
+      summary: Get profiles by user preference
+      tags:
+      - User
+  /api/v1/dating/matches:
+    get:
+      consumes:
+      - application/json
+      description: Retrieve a list of matched users
+      produces:
+      - application/json
+      responses: {}
+      summary: Get matched users
+      tags:
+      - User
+  /api/v1/dating/package/buy:
+    post:
+      consumes:
+      - application/json
+      description: Purchase a package
+      parameters:
+      - description: Buy package request body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/contract.BuyPackageRequest'
+      produces:
+      - application/json
+      responses: {}
+      summary: Buy a package
+      tags:
+      - Package
+  /api/v1/dating/package/list:
+    get:
+      consumes:
+      - application/json
+      description: Retrieve the list of packages available for purchase
+      produces:
+      - application/json
+      responses: {}
+      summary: Get available packages
+      tags:
+      - Package
+  /api/v1/dating/preference:
+    get:
+      consumes:
+      - application/json
+      description: Retrieve the user's preference settings
+      produces:
+      - application/json
+      responses: {}
+      summary: Get user preference
+      tags:
+      - User
+    put:
+      consumes:
+      - application/json
+      description: Update the user's preference settings
+      parameters:
+      - description: Update user preference request body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/contract.UpdateUserPreferenceRequest'
+      produces:
+      - application/json
+      responses: {}
+      summary: Update user preference
+      tags:
+      - User
+  /api/v1/dating/swipe:
+    post:
+      consumes:
+      - application/json
+      description: Swipe a user and check if it's a match
+      parameters:
+      - description: Swipe request body
+        in: body
+        name: body
+        required: true
+        schema:
+          $ref: '#/definitions/contract.SwipeRequest'
+      produces:
+      - application/json
+      responses: {}
+      summary: Swipe user
+      tags:
+      - User
+swagger: "2.0"

@@ -1,0 +1,206 @@
+{
+  "err_bad_request_title": {
+    "other": "Bad Request"
+  },
+  "err_bad_request_message": {
+    "other": "Invalid request parameters"
+  },
+  "err_unauthorized_title": {
+    "other": "Unauthorized"
+  },
+  "err_unauthorized_message": {
+    "other": "Not authorized"
+  },
+  "err_internal_server_title": {
+    "other": "Server Error"
+  },
+  "err_internal_server_message": {
+    "other": "Failed to process request, please try again in a moment."
+  },
+  "err_email_registered_title": {
+    "other": "This account has been registered"
+  },
+  "err_email_registered_message": {
+    "other": "Please login to continue"
+  },
+  "err_email_unverified_title": {
+    "other": "This account is not verified yet."
+  },
+  "err_email_unverified_message": {
+    "other": "Please verify your account through register page."
+  },
+  "err_email_registered_by_external_provider_title": {
+    "other": "Your account doesn't have password"
+  },
+  "err_email_registered_by_external_provider_message": {
+    "other": "Please create password by clicking 'Forgot Password' button below"
+  },
+  "err_phone_registered_title": {
+    "other": "This account has been registered"
+  },
+  "err_phone_registered_message": {
+    "other": "Please login to continue"
+  },
+  "err_phone_unverified_title": {
+    "other": "This account is not verified yet."
+  },
+  "err_phone_unverified_message": {
+    "other": "Please verify your account through register page."
+  },
+  "err_email_or_password_title": {
+    "other": "Wrong email or password"
+  },
+  "err_email_or_password_message": {
+    "other": "Please make sure you entered the right email or password"
+  },
+  "err_phone_or_password_title": {
+    "other": "Wrong phone number or password"
+  },
+  "err_phone_or_password_message": {
+    "other": "Please make sure you entered the right phone number or password"
+  },
+  "err_delete_account_invalid_password_title": {
+    "other": "Delete Account Failed"
+  },
+  "err_delete_account_invalid_password_message": {
+    "other": "Invalid password"
+  },
+  "err_password_not_set_title": {
+    "other": "Password Validation Failed"
+  },
+  "err_password_not_set_message": {
+    "other": "Password not set"
+  },
+  "err_expired_otp_title": {
+    "other": "Expired OTP"
+  },
+  "err_expired_otp_message": {
+    "other": "OTP Expired"
+  },
+  "err_invalid_otp_title": {
+    "other": "Invalid OTP"
+  },
+  "err_invalid_otp_message": {
+    "other": "Wrong OTP code"
+  },
+  "err_otp_used_title": {
+    "other": "OTP Already Used"
+  },
+  "err_otp_used_message": {
+    "other": "OTP has already been used for verification"
+  },
+  "err_session_id_not_found_title": {
+    "other": "Session ID Not Found"
+  },
+  "err_session_id_not_found_message": {
+    "other": "The Session ID provided could not be found."
+  },
+  "err_quota_exceeded_title": {
+    "other": "OTP Request Exceeded"
+  },
+  "err_quota_exceeded_message": {
+    "other": "You have requested too many OTP. Please try again tomorrow or after 00.00"
+  },
+  "err_otp_waiting_time_title": {
+    "other": "Cannot Request New OTP"
+  },
+  "err_otp_waiting_time_message": {
+    "other": "Please wait before requesting a new otp"
+  },
+  "err_verify_identity_invalid_email_or_password_title": {
+    "other": "Verify Identity Failed"
+  },
+  "err_verify_identity_invalid_email_or_password_message": {
+    "other": "Invalid email or password"
+  },
+  "err_verify_identity_password_not_set_title": {
+    "other": "Verify Identity Failed"
+  },
+  "err_verify_identity_password_not_set_message": {
+    "other": "Password not set"
+  },
+  "err_change_password_invalid_password_title": {
+    "other": "Change Password Failed"
+  },
+  "err_change_password_invalid_password_message": {
+    "other": "Invalid password"
+  },
+  "err_change_password_password_not_set_title": {
+    "other": "Change Password Failed"
+  },
+  "err_change_password_password_not_set_message": {
+    "other": "Password not set"
+  },
+  "err_identity_not_valid_title": {
+    "other": "Invalid identity"
+  },
+  "err_identity_not_valid_message": {
+    "other": "Identity not valid"
+  },
+  "err_id_not_found_title": {
+    "other": "Id not found"
+  },
+  "err_id_not_found_message": {
+    "other": "Id user not found"
+  },
+  "err_delete_link_not_available_title": {
+    "other": "Delete Account Link Not Available"
+  },
+  "err_delete_link_not_available_message": {
+    "other": "Delete account link not availabe for this feature or channel"
+  },
+  "err_expired_link_title": {
+    "other": "Expired Link"
+  },
+  "err_expired_link_message": {
+    "other": "The link has expired"
+  },
+  "err_link_identity_not_valid_title": {
+    "other": "OTP Identity Not Valid"
+  },
+  "err_link_identity_not_valid_message": {
+    "other": "The OTP identity provided not valid"
+  },
+  "err_link_not_available_title": {
+    "other": "Link Not Available"
+  },
+  "err_link_not_available_message": {
+    "other": "Link not availabe for this otp request"
+  },
+  "err_user_account_not_found_title": {
+    "other": "Email not found"
+  },
+  "err_user_account_not_found_message": {
+    "other": "Email provided could not be found."
+  },
+  "err_user_not_found_title": {
+    "other": "User Not Found"
+  },
+  "err_user_not_found_message": {
+    "other": "User not found with the provided information"
+  },
+  "err_wrong_password_title": {
+    "other": "Wrong password"
+  },
+  "err_wrong_password_message": {
+    "other": "The password entered is incorrect"
+  },
+  "err_email_unregistered_title": {
+    "other": "This account has not been registered."
+  },
+  "err_email_unregistered_message": {
+    "other": "Please register to enjoy Vision+ content"
+  },
+  "err_email_fb_not_found_title": {
+    "other": "Permission required."
+  },
+  "err_email_fb_not_found_message": {
+    "other": "Cannot register without email address, please allow email permission."
+  },
+  "err_phone_unregistered_title": {
+    "other": "This account has not been registered."
+  },
+  "err_phone_unregistered_message": {
+    "other": "Please register to enjoy Vision+ content"
+  }
+}
